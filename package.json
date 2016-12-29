@@ -1,0 +1,30 @@
+{
+  "name": "cordova-plugin-externalscreen-overscan",
+  "version": "0.0.1",
+  "description": "A cordova external screen plugin. Use to creates a new UIWebView on an additional screen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cordova",
+    "external",
+    "screen"
+  ],
+  "author": "wenfeng",
+  "license": "MIT",
+  "cordova": {
+    "id": "cordova-plugin-externalscreen-overscan",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHall79/cordova-plugin-externalscreen-overscan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JHall79/cordova-plugin-externalscreen-overscan/issues"
+  },
+  "homepage": "https://github.com/JHall79/cordova-plugin-externalscreen-overscan#readme"
+}
