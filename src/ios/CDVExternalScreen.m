@@ -210,8 +210,11 @@ NSString* SCREEN_NOTIFICATION_HANDLERS_OK =@"External screen notification handle
         baseURLAddress = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"www"];
         
         baseURL = [NSURL URLWithString:baseURLAddress];
+
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"externalScreen" withExtension:@"html"];
+        [webView loadRequest:[NSURLRequest requestWithURL:url]];
         
-        [webView loadHTMLString:@"<body bgcolor='#000000'></body>" baseURL:baseURL];
+        //[webView loadHTMLString:@"<body bgcolor='#000000'></body>" baseURL:baseURL];
         
         [externalWindow addSubview:webView];
         [externalWindow makeKeyAndVisible];
